@@ -57,9 +57,9 @@ Quickstart
    .. code:: bash
 
       $ wget https://raw.githubusercontent.com/maykinmedia/objecttypes-api/master/docker-compose-quickstart.yml -O docker-compose-qs.yml
-      $ docker-compose -f docker-compose-qs.yml up -d
-      $ docker-compose exec -T web src/manage.py loaddata demodata
-      $ docker-compose exec web src/manage.py createsuperuser
+      $ docker-compose -f docker-compose-quickstart.yml up -d
+      $ docker-compose -f docker-compose-quickstart.yml exec -T web src/manage.py loaddata demodata
+      $ docker-compose -f docker-compose-quickstart.yml exec web src/manage.py createsuperuser
 
 2. In the browser, navigate to ``http://localhost:8001/`` to access the admin
    and the API.
